@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <p id="para">aaaa</p>
+    
+    <script>
+        let p = document.getElementById("para");
+        p.innerText= "Ola Mundo!";
+    </script>
+    
+    <hr>
+    
+    <div class="caixas">
+        <p>caixa1</p>
+    </div>
+    <div class="caixas">
+        <p>caixa2</p>
+    </div>
+    <div class="caixas">
+        <p>caixa3</p>
+    </div>
+    
+    <script>
+        let caixas = document.getElementsByClassName("caixas");
+        caixas[0].style.color = "blue";
+        caixas[1].style.color = "blue";
+        caixas[2].style.color = "blue";
+    </script>
+    
+    <hr>
+    
+    <div class="container">
+        <p>Texto nao alterado</p>
+        <p>Texto nao alterado</p>
+        <p>Texto nao alterado</p>
+        <p>Texto nao alterado</p>
+        <p>Texto nao alterado</p>
+    </div>
+    
+    <script>
+        let container = document.querySelector(".container");
+        let texto = container.getElementsByTagName("p");
+        texto[2].innerText = "Texto alterado";
+    </script>
+    
+    <hr>
+    
+    <ul>
+        <li>1 item</li>
+        <li>2 item</li>
+        <li>3 item</li>
+        <li>4 item</li>
+        <li>5 item</li>
+    </ul>
+    
+    <script>
+        let lista = document.querySelector("ul li");
+        lista.style.color = "red";
+    </script>
+    
+</body>
+</html>
